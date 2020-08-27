@@ -6,7 +6,7 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.newfirstapphomeee.AboutFragment"
-        android:label="AboutFragment" >
+        android:label="Aboutme" >
         <action
             android:id="@+id/action_aboutFragment_to_contactFragment"
             app:destination="@id/contactFragment" />
@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/contactFragment"
         android:name="com.example.newfirstapphomeee.contact.ContactFragment"
-        android:label="ContactFragment" >
+        android:label="Contact" >
         <action
             android:id="@+id/action_contactFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
