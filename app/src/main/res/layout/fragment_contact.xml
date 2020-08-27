@@ -5,7 +5,7 @@
     <data>
         <variable
             name="contactViewModel"
-            type="" />
+            type="com.example.newfirstapphomeee.contact.ContactViewModel" />
     </data>
 
     <FrameLayout
