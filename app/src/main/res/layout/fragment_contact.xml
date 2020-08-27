@@ -34,13 +34,14 @@
                 android:id="@+id/buttonInsert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="@{()->contactViewModel.onContactAdd()}"
                 android:text="Button" />
 
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="text" />
+                android:text="@{contactViewModel.contactString}" />
         </LinearLayout>
     </FrameLayout>
 
