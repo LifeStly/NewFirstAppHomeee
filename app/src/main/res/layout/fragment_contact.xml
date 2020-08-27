@@ -30,18 +30,25 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text" />
+
             <Button
                 android:id="@+id/buttonInsert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="@font/margarine"
                 android:onClick="@{()->contactViewModel.onContactAdd()}"
+                android:shadowColor="@color/colorAccent"
                 android:text="Button" />
 
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@{contactViewModel.contactString}" />
+                android:fontFamily="@font/margarine"
+                android:text="@{contactViewModel.contactString}"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="@dimen/dataaText" />
         </LinearLayout>
     </FrameLayout>
 
