@@ -9,26 +9,33 @@
     </data>
 
     <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".contact.ContactFragment">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundscean"
+        tools:context=".contact.ContactFragment">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
-                android:layout_width="match_parent"
+                android:layout_width="361dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:gravity="center"
+                android:hint="Name"
                 android:inputType="text" />
 
             <EditText
                 android:id="@+id/editTextTextPersonPhone"
-                android:layout_width="match_parent"
+                android:layout_width="361dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:gravity="center"
+                android:hint="Phone"
                 android:inputType="text" />
 
             <Button
