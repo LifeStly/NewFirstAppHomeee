@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" >
 
     <data>
@@ -38,24 +39,50 @@
                 android:hint="Phone"
                 android:inputType="text" />
 
-            <Button
-                android:id="@+id/buttonInsert"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:fontFamily="@font/margarine"
-                android:onClick="@{()->contactViewModel.onContactAdd()}"
-                android:shadowColor="@color/colorAccent"
-                android:text="Button" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="209dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/listbackground"
+                    android:fontFamily="@font/margarine"
+                    android:gravity="center|center_horizontal"
+                    android:text="Contact List"
+                    android:textSize="@dimen/NormalText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonInsert"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/buttonback"
+                    android:fontFamily="@font/margarine"
+                    android:onClick="@{()->contactViewModel.onContactAdd()}"
+                    android:shadowColor="@color/colorAccent"
+                    android:text="Add List"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/textview"
-                android:layout_width="match_parent"
+                android:layout_width="383dp"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/margarine"
                 android:text="@{contactViewModel.contactString}"
                 android:textColor="@color/design_default_color_on_secondary"
                 android:textSize="@dimen/dataaText" />
+
         </LinearLayout>
     </FrameLayout>
 

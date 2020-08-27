@@ -34,7 +34,7 @@ class ContactViewModel (private val database: ContactDataDAO,
                 append(it.id)
                 append(" : ")
                 append(it.name)
-                append(", ")
+                append(", Tel : ")
                 append(it.phone)
                 append("<br>")
             }
